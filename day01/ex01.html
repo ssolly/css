@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- css추가 방법 -->
+<style type="text/css">
+	*{		/* *은 모든 값을 의미*/	
+		color:gray;
+		/* background-color:pink; */
+		font-size:15pt;
+		margin:0;
+	}
+	
+	/* id값(보통 큰범위)을 가져와서 #____, class값(보통 작은범위)은 .____ */
+	/* 아이디 선택자 */
+	#id01 { color:white; background-color:gray; font-style:italic;}
+	
+	/* 클래스 선택자 */
+	h3 {color:purple;}
+	.class01 {background-color:purple; color:pink;}
+	label.class01 {background-color:gray; color:pink;}
+	
+	/* 가상 선택자 : 마우스가 올라 갔을 때 */
+	/* link:방문하지 않았던 곳, visited:방문한 곳, hover:마우스 올라 갔을 때, active:클릭 순간*/
+	h3:hover { background-color:black;}	/* id값 지정한 곳에는 적용X */
+	a:link {color:pink; text-decoration:none; /*a태그 밑줄 삭제 옵션*/}
+	a:visited{color:pink;}
+	a:hover {color:gray; text-decoration:overline;}
+	a:active{background-color:pink;}
+	
+	.div01 {
+		width:200px; height:100px; background-color:khaki; opacity/*농도*/:0.9;
+	}
+	.div01:hover {
+		width:400px; height:50px; color:green; opacity:0.4; 
+		transition:all 1.5s linear 0.5s; /* linear:선으로 이동하는 동작 방식*/
+							/* steps(4,end) 방식도 존재*/
+	}
+	
+	nav ul{list-style/*li의 점 삭제 옵션*/:none; display:flex; }
+	nav ul li{margin:0 10px /*상 우 하 좌 */; padding:10px 10px;}
+	nav ul li a{text-decoration:none; color:pink;}
+	nav ul li a:hover{color:pink; background-color:black; padding-bottom:3px; 
+					  border-bottom:1px solid /*dotted*/ pink; transition: all 0.25s; text-decoration:none;}
+					  
+	.div02{color:white; background-color:skyblue; height:100px;
+		   overflow/*부모 값을 벗어날 때 옵션*/:hidden;}
+	.div02 div{color:white; background-color:navy; width:200px; height:200px;}
+</style>
+
+<meta charset="UTF-8">
+<title>CSS day01-ex01</title>
+</head>
+<body>
+	<h3 id="id01">아이디 선택자 적용</h3>
+	<h3 class="class01">전체 스타일</h3>
+	<h3>새로운 스타일</h3>
+	<label class="class01">style!</label>
+	<br><br><hr><br>
+	
+	<a href="#">test</a><br>
+	<br><hr><br>
+	
+	<div class="div01">
+		가상 클래스 이용한 애니메이션 효과<br>
+		마우스가 위에 있으면 박스가 늘어나요
+	</div>
+	<br><hr><br>
+	
+	<nav style="background: gray;">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBERSHIP</a></li>
+		</ul>
+	</nav>
+	<br><hr><br>
+	<div class="div02">
+		hello
+		<div>css</div>
+	</div>
+</body>
+</html>
