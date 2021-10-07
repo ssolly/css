@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 quiz03_teacher</title>
+<style type="text/css">
+	#wrap{width:500px;}
+	.header{display:flex;/*가로배치*/}
+	.header h2{width:100%; text-align:center;}
+	.header img{width:100px;height:100px; box-shadow:10px 10px 15px gray;}
+	
+	.nav ul{background-color:gray; padding:10px 0px 10px 10px; overflow:hidden;}
+	.nav ul li {display:inline; list-style:none; padding:20px 20px 20px 20px;
+			   text-align:center; }
+	.nav ul li:hover{background-color:black;}
+	.nav ul li a{color: white; text-decoration:none;}
+	
+	.content{display:flex;}
+	.content_1 {width:20%; background-color:pink;}
+	.content_2 {width:50%; background-color:#98D4C2;}
+	.content_3 {width:30%; background-color:skyblue;}
+			   
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img src="../img/맛집.png">
+			<h2>맛집 탐방 이야기</h2>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">게시판</a></li>
+				<li><a href="#">내 정보</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content_1">
+				<img src="../img/light_off.jpg" width="100px" height="100px"><br>
+				<img src="../img/light_on.jpg" width="100px" height="100px">
+			</div>
+			<div class="content_2">
+				<div><b>&lt; 오늘의 맛집 &gt;</b></div>
+				<div style="display:flex">
+					<div style="width:190px">내용</div>
+					<img src="../img/맛집01.jpg" width="50px" height="50px">
+				</div>
+				<div style="display:flex">
+					<div style="width:190px">내용</div>
+					<img src="../img/맛집02.jpg" width="50px" height="50px">
+				</div>
+				<div style="display:flex">
+					<div style="width:190px">내용</div>
+					<img src="../img/맛집03.jpg" width="50px" height="50px">
+				</div>
+			</div>
+			<div class="content_3">3</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+</body>
+</html>

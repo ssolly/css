@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css day02 quiz02</title>
+<style type="text/css">
+	#wrap01{width:600px; display:flex; flex-flow:column;}
+	* {box-sizing:border-box;}
+	#wrap01 div{width:100%;}
+	#wrap01 .header { order:1;width:100%; height:100px; 
+				border:2px solid black; text-align:center; background-color:red;}
+	#wrap01 .main{order:2;display:flex;}
+	#wrap01 .nav{order:1; width:20%; height:300px; border:2px solid black;  border-right:1px; 
+			 text-align:center; background-color:yellow;}
+	#wrap01 .section{order:2; width:80%; height:300px; border:2px solid black; 
+				 float:right; text-align:center; background-color:green;}
+	#wrap01 .footer { order:3;width:100%; height:80px; border:2px solid black; 
+				text-align:center;background-color:pink;}
+				
+	#wrap02{width:600px; display:flex; flex-flow:column;}
+	#wrap02 div{width:100%;}
+	#wrap02 .header { order:1;width:100%; height:100px; 
+				border:2px solid black; text-align:center; background-color:red;}
+	#wrap02 .main{order:2;display:flex;}
+	#wrap02 .nav{order:1; width:15%; height:300px; border:2px solid black; 
+			 text-align:center; background-color:yellow;}
+	#wrap02 .section{order:2; width:65%; height:300px; border:2px solid black; 
+				 float:right; text-align:center; background-color:green;}
+	#wrap02 .aside{order:2; width:25%; height:300px; border:2px solid black;
+				 float:right; text-align:center; background-color:yellow;}
+	#wrap02 .footer { order:3;width:100%; height:80px; border:2px solid black; 
+				text-align:center;background-color:pink;}
+</style>
+</head>
+<body>
+	<div id="wrap01">
+		<div class="header">
+			<h3>&lt; header &gt;</h3>
+		</div>
+		<div class="main">
+			<div class="nav">
+				<h4>&lt; nav &gt;</h4>
+			</div>
+			<div class="section">
+				<h4>&lt; section &gt;</h4>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>&lt; footer &gt;</h4>
+		</div>
+	</div>
+	<p>
+	<div id="wrap02">
+		<div class="header">
+				<h3>&lt; header &gt;</h3>
+			</div>
+			<div class="main">
+				<div class="nav">
+					<h4>&lt; nav &gt;</h4>
+				</div>
+				<div class="section">
+					<h4>&lt; section &gt;</h4>
+				</div>
+				<div class="aside">
+					<h4>&lt; aside &gt;</h4>
+				</div>
+			</div>
+			<div class="footer">
+				<h4>&lt; footer &gt;</h4>
+			</div>
+	</div>
+</body>
+</html>

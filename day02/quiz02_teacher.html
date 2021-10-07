@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 quiz02_teacher</title>
+<style>
+        .wrap03{
+        display:flex;flex-flow:column; box-sizing:border-box;
+        width:500px;height:400px;margin:0 auto; overflow:hidden;
+        }
+        .main_header{ order:1; border-style:solid; text-align:center; height:20%; background:red; }
+        .section{order:2; display:flex; background:pink; height:60%; }
+        .section nav {order:1; background:gold; width: 15%; height:100%; border-style: solid; }
+        .section section {order:2; background:green; width:60%; height:100%; border-style: solid;}
+        .section aside { order:3; background:gold; border-style: solid; width:25%; height:100%; }
+        footer {order:3;  border-style: solid; height:20%; background:pink; }
+        
+        .in_section{ display:flex;flex-flow:column; }
+        h3{ text-align:center;}
+        .in_section header{order:1; margin: 10px; height:30px; border-style: solid; 
+        text-align:center; background:skyblue; }
+        .in_section article{order:2; margin: 10px; height:30px; border-style:solid;
+         text-align:center; background:gold;}
+        .in_section footer {order:3; margin: 10px; height:30px; border-style: solid; text-align:center;}
+        
+         .wrap04 { width:500px; margin:0 auto; display:flex;flex-flow:column; 
+        height:500px; border-style: solid;}
+        .header{order:1; height:20%; background:red;}
+        .nav { order:2; background:gold; height:15%; }
+        .section{ order:3; display:flex; height:50%;}
+        .section section { order:1; width:70%; height:100%; background:green;}
+        .section aside {  order:2; width:30%; height:100%; background:skyblue;}
+         #tag {margin: 10px; border-style: solid; text-align:center; background:pink;}
+        .footer { order:4;  background:pink; height:15%;}
+        h3,h1{ text-align:center; }
+        
+    </style>
+</head>
+<body>
+<div class="wrap03">
+        <header class="main_header"><h1>&lt; header &gt;</h1></header>
+        <div class="section">
+        <nav><h3>nav</h3></nav>
+        <aside><h3>aside</h3></aside>
+        <section class="in_section">
+            <h3>section1</h3>
+            <header>header</header>
+            <article>article</article>
+            <footer>footer</footer>
+        </section>
+        </div>
+        <footer><h3>&lt; footer &gt;</h3></footer>
+    </div>
+    
+    <div class="wrap04">
+        <header class="header"><h1>&lt; header &gt;</h1></header>
+        <nav class="nav"><h3>&lt; nav &gt;</h3></nav>
+        <div class="section">
+        <aside><h3>&lt; aside &gt;</h3></aside>
+        <section>
+            <h3>< section1 &gt;</h3>
+            <header id="tag">&lt; header &gt;</header>
+            <article id="tag">&lt; article &gt;</article>
+            <footer id="tag">&lt; footer &gt;</footer>
+        </section>
+        </div>
+        <footer class="footer"><h3>&lt; footer &gt;</h3></footer>
+    </div>
+</body>
+</html>
