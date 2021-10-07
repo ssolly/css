@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 quiz01</title>
+<style>
+	#wrap{width:750px; margin:auto;}
+
+	nav ul{padding:5px 0px 5px 5px;list-style:none; display:flex; justify-content:flex-end; background-color:#C2EECC;}
+	nav ul li {margin:0px 0px 0px 5px;}
+	nav ul li a{color:white; text-decoration:none; background-color:#7FC790; padding:5px 5px 5px 5px;}
+	nav ul li a:hover{background-color:#397246;}
+	
+	img{width:100%;}
+	
+	input:focus{background-color:#E8FCED;}
+	
+	#Q1 .hid{color:white;}
+	#Q1 label:active + .hid{color:#397246;}
+	
+	#Q2 .hid{color:white;}
+	#Q2 label:active + .hid{color:#397246;}
+	
+	#Q3 .hid{color:white;}
+	#Q3 label:active + .hid{color:#397246;}
+	
+	#Q4 .hid{color:white;}
+	#Q4 label:active + .hid{color:#397246;}
+	
+	
+</style>
+</head>
+<body>
+<div id="wrap">
+	<nav>
+		<ul>
+			<li><a href="#Q1">1번 문제로 이동</a></li>
+			<li><a href="#Q2">2번 문제로 이동</a></li>
+			<li><a href="#Q3">3번 문제로 이동</a></li>
+			<li><a href="#Q4">4번 문제로 이동</a></li>
+		</ul>
+	</nav>
+	<div class="pic">
+		<img src="../img/quiz.png">
+	</div>
+	<hr>
+	<h3><b>정답 확인 클릭시 정답 보여짐</b></h3>
+	<hr>
+	<div id="Q1">
+	<font size="4px" color="#397246"><b> 문제 1)정적 언어는?</b></font><br>
+	정답 작성 <input type="text"> &ensp;
+	<label> [정답 클릭 확인] </label>
+	<label class="hid">html,css,javascript 등</label>
+	</div>
+	<hr>
+	<div id="Q2">  
+	<font size="4px" color="#27813C"><b> 문제 2) 서버 사이드 언어는?</b></font><br>
+	정답 작성 <input type="text"> &ensp;
+	<label> [정답 클릭 확인] </label>
+	<label class="hid">jsp,django,php 등</label>
+	</div>
+	<hr>
+	<div id="Q3">
+	<font size="4px" color="#18642A"><b> 문제 3) 프로그래밍 언어는?</b></font><br>
+	정답 작성 <input type="text"> &ensp;
+	<label> [정답 클릭 확인] </label>
+	<label class="hid">java, c, ptyhon 등</label>
+	</div>
+	<hr>
+	<div id="Q4">
+	<font size="4px" color="#265731"><b> 문제 4) 클라이언트 사이드 언어는?</b></font><br>
+	정답 작성 <input type="text"> &ensp;
+	<label> [정답 클릭 확인] </label>
+	<label class="hid"> html,css,javascript 등</label>
+	</div>
+</div>
+</body>
+</html>
