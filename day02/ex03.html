@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 ex03</title>
+<style type="text/css">
+	#wrap{width:450px;}
+
+	/*border박스 사이즈 설정*/
+	* {box-sizing:border-box;}
+	
+	.div{ width:150px; margin-top:20px;}
+	/* border의 두께에 따라 150px를 넘을 수 있다 */
+	.a{border:1px solid black;}
+	.b{border:10px solid black;}
+	.c{border:20px solid black;}
+	
+	#wrap02{width:200px; border:1px solid #522361; text-align:center;
+			display:flex;/*order를 지정할 수 있다*/ flex-flow:column;/*row:가로(default)*/ }
+	#wrap02 div{width:100%;}
+	#wrap02 .div1{order:1; background-color:#E6BCF3;}
+			/* div:first-child, div:nth-child(n) : 클래스지정 없이 설정 가능*/
+	#wrap02 .div2{order:2; background-color:#D39DE4; display:flex;}
+	#wrap02 div:nth-child(3){order:3; background-color:#BA8AC9;}
+	.div01{order:1; background-color:#ECAEF0;}
+	.div02{order:2; background-color:#D098D4;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="div a"> aaa </div>
+	<div class="div b"> bbb </div>
+	<div class="div c"> ccc </div>
+</div>
+<hr>
+<div id="wrap02">
+	<div class="div1"><h3>1</h3></div>
+	<div class="div2">
+		<div class="div01"><h4>A</h4></div> <!-- div의 첫번째 종속div라 div:fist-child로 인식 -->
+		<div class="div02"><h4>B</h4></div>
+	</div>
+	<div><h3>3</h3></div>
+</div>
+</body>
+</html>
