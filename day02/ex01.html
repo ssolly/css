@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 ex01</title>
+<!-- CSS 효과 -->
+<style>
+	h2:first-letter{font-size:30px; color:red; text-transform:uppercase; /*대문자*/}
+	h3:first-line{color:orange;}
+	input:focus{background-color:khaki;}
+	.label label{color:white;}
+	input:checked +label{background-color:#8ADC9E;}/*input의 checked가 클릭 되면*/
+	
+	nav ul{list-style/*li의 점 삭제 옵션*/:none; text-align:right; }
+	/* nav ul{list-style:none; display:flex; justify-content:flex-end;} */
+	nav ul li{margin:0 10px /*상 우 하 좌 */; padding:10px 10px; display:inline;}
+	nav ul li a{text-decoration:none; color:pink;}
+	nav ul li a:hover{color:pink; background-color:black; padding-bottom:3px; 
+					  border-bottom:1px solid /*dotted*/ pink; transition: all 0.25s; text-decoration:none;}
+					  
+</style>
+
+</head>
+<body>
+	<h2>hello</h2>
+	<h3>문제) 대한민국<br> 수도는?</h3>
+	정답<input type="text"><br>
+	힌트<input type="checkbox"><label class="label">ㅅㅇ</label>
+	<br><hr>
+	
+	<nav style="background: gray;">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBERSHIP</a></li>
+		</ul>
+	</nav>
+	<hr>
+
+	
+</body>
+</html>
