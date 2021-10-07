@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day02 ex02</title>
+
+<style>
+	.title{text-shadow:10px/*좌우*/ 10px/*상하*/ 15px/*농도+퍼지는양*/ gray; /*음수:왼쪽, 양수:오른쪽*/ 
+		   font-family:"궁서체"; font-size:30pt; text-align:center;}
+	
+ 	.div01{
+	 	background-color:khaki; width:500px;
+	 	padding:20px;
+	 	border:10px solid navy;
+	 	margin:30px;
+	 	}
+	 
+	 img{margin-left:50px; width:200px; height:150px;
+	 	 box-shadow:10px 10px 12px green;}
+</style>
+
+</head>
+<body>
+	<h1 class="title"> 제목 공간</h1>
+	<hr>
+
+	<div class="div01">
+		박스모델 padding, border, margin 속성의 기본값은 "0" <br>
+		상우하좌 방향(top,right,bottom, left)<br><br>
+		<b>[border]</b><br> 
+		- 숫자 하나 작성 시 : 모든 방향에서 동일 값 적용<br>
+		- border-top/bottom/right : 개별적 박스 적용<br>
+		- solid / dotted / double : 테두리 모양 설정<br>
+		- ex) border-bottom:15px double gray; border-right:5px dotted pink;<br>
+		<br>
+		<b>[padding]</b><br>
+		 - 안쪽으로 여백을 주는 것<br>
+		 - padding-top/bottom : 개별적 안쪽 여백 적용<br>
+		 - padding값 두개만 작성시 : 상하 / 좌우 여백 적용<br>
+		 - ex) padding:20px 0; <br>
+		 <br>
+		 <b>[margin]</b><br>
+		  - 바깥으로 밀어내는 것<br>
+	</div>
+	<hr>
+	<img src="../img/quiz.png">
+	
+</body>
+</html>
