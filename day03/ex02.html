@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS day03 ex02</title>
+<style type="text/css">
+	.sp{background-color:cyan; width:400px; height:50px;}
+	.rp1{position:fixed/*항상 그 자리에*/; right:30px;top:10px;background-color:orange;
+		 width:400px; height:50px; z-index:-1;}
+	.rp2{position:absolute; right:60px;top:20px;background-color:lightgreen;
+		 width:400px; height:50px; z-index:-2;}
+	h2{z-index:0;}
+</style>
+</head>
+<body>
+	<h2> 위치 지정2 : <a href="#"> 클릭클릭클릭</a> </h2>
+	<p class="sp"> 정적 위치 설정 </p>
+	<p class="sp"> 정적 위치 설정 </p>
+	<p class="sp"> 정적 위치 설정 </p>
+	<div class="rp1"> 고정 위치 설정(fixed) - right:30px, top:10px</div>
+	<div class="rp2"> 절대 위치 설정(absolute) - right:60px, top:20px</div>
+	
+</body>
+</html>
