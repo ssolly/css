@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{margin:0;}
+
+.wrap {width:1920px; margin:0 auto;}
+a.logo img {width:130px; height:50px; margin-top:10px;}
+
+nav {width:1920px; height:70px; background-color:black; position:fixed;}
+nav ul {list-style:none /*기본값인 점 삭제 옵션*/; display:flex;}
+nav ul li{margin:0 3px; padding:8px 15px; margin-top:15px}
+nav ul li a {text-decoration:none; color:white;}
+nav ul li a:hover{color:#FFE5CC; padding-bottom:3px; 
+				  border-bottom:1px solid #FFE5CC; transition:all 0.25s;}
+				  
+.nav-wrap{display:flex; justify-content:space-between;}
+
+.back-image1 {background-image:url("../img/body_bg.png");
+			 /*background-size:1920px 1080px;*/}
+.full-page{height:1080px;}
+
+.title{padding:100px 0 0 200px; color:#515050; text-shadow:10px 10px 15px gray;
+	   font-size:70pt;}
+	   
+.inner{margin:0 auto; height:500px; width:700px; background-color:white/*rgba(255,255,255,.8)*/;
+	   color:#515050;}
+	   
+#fourth form{margin:auto; width:70%;}
+#fourth form label{width:120px; display:inline-block; padding:10px 0; vertical-align:top;}
+#fourth form input{border-radius/*모서리 각*/:5px; height:20px; width:30%; border:1px soild gray;}
+#fourth form textarea{border-radius:5px; width:50%; height:100px;}
+#fourth form button{margin-left:120px; padding:5px 15px; border-radius:5px; background-color:#A7BBC6;}
+#fourth form button:active{border-radius:2px; background-color:#95ADB9;}
